@@ -1,0 +1,1 @@
+lottery picks on one page
