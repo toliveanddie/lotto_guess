@@ -304,7 +304,8 @@ module WelcomeHelper
 		end
 		hold = []
 		hold.push(picks)
-		hold.push(bonus.uniq.last)
+		bnumbers = ('1'..'26').to_a
+		hold.push((bnumbers - bonus.first(26).uniq).first)
 		return hold
 
 	end # powerball
@@ -376,7 +377,8 @@ module WelcomeHelper
 			if picks.uniq.size >= 5
 				hold = []
 				hold.push(picks)
-				hold.push(bonus.uniq.last)
+				bnumbers = ('1'..'24').to_a
+				hold.push((bnumbers - bonus.first(24).uniq).first)
 				return hold
 				break
 			end
