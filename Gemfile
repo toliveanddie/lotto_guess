@@ -62,5 +62,5 @@ group :test do
   gem "selenium-webdriver"
 end
 
-gem 'open-uri'
-gem 'nokogiri'
+gem "open-uri"
+gem "nokogiri"
