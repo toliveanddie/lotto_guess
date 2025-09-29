@@ -385,5 +385,13 @@ module WelcomeHelper
     end
   end # megamillions
 
+	def qps
+		numbers = (1..49).to_a
+		hold = []
+		2.times do
+			hold.push(numbers.shuffle.first(6))
+		end
+		return hold
+	end
 
 end
